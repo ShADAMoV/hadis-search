@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+  letter-spacing: 1.14px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+strong {
+  font-weight: bold;
+}
+input {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.show {
+  display: block !important;
+}
+.no-overflow {
+  overflow: hidden;
+}
+[class*="__container"] {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+@media (max-width: 1440px) {
+  [class*="__container"] {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1024px) {
+  [class*="__container"] {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  [class*="__container"] {
+    padding: 0 10px;
+  }
+}
+.header {
+  background-color: #e0e0e0;
+  position: sticky;
+  top: 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  padding: 0 50px !important;
+  max-width: 1700px !important;
+  width: 100%;
+  height: 70px;
+}
+.logo {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+}
+.logo:hover {
+  opacity: 0.75;
+}
+.logo__img {
+  width: 60px;
+  height: 54px;
+  margin-right: 5px;
+}
+.logo__img img {
+  width: 100%;
+  height: 100%;
+}
+.logo__txt {
+  font-weight: 700;
+  font-size: 18px;
+}
+.header__contacts {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-column-gap: 15px;
+  -ms-column-gap: 15px;
+  column-gap: 15px;
+}
+.header__contacts > * {
+  cursor: pointer;
+}
+.header__contacts > *:hover {
+  opacity: 0.6;
+}
+@media (max-width: 1024px) {
+  .header__container {
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .header__contacts {
+    -webkit-column-gap: 8px;
+    column-gap: 8px;
+  }
+  .header__container {
+    padding: 0 10px !important;
+    height: 50px;
+  }
+}
+.main {
+  width: 100%;
+  background: url(assets/images/background_dark.png);
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.main__title {
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 3px 2px black;
+}
+.main__subtitle {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #c1c1c1;
+  border-radius: 14px;
+  padding: 10px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-top: 60px;
+  -webkit-column-gap: 10px;
+  -ms-column-gap: 10px;
+  column-gap: 10px;
+}
+.search__hadis {
+  width: 100%;
+  background-color: #858585;
+  height: 50px;
+  border-radius: 14px;
+  color: #fff;
+  padding: 0 30px;
+  box-shadow: 0 0 20px 3px #000;
+}
+.search__hadis::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+.search__hadis:-ms-input-placeholder {
+  color: #c8c8c8;
+}
+.search__hadis::placeholder {
+  color: #c8c8c8;
+}
+.search__button {
+  padding: 8px;
+  border-radius: 14px;
+  background: #858585;
+  box-shadow: 0 0 20px 3px #000;
+  cursor: pointer;
+  color: #c8c8c8;
+  font-size: 14px;
+}
+.search__button:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+.hadis__box {
+  margin-top: 100px;
+  background: #858585;
+  padding: 15px 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px 3px #000;
+}
+.hadis__reliable {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+.hadis__arabic-text,
+.hadis__translate-text,
+.hadis__explanation-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.hadis__arabic-text {
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 36px;
+}
+.hadis__translate-text {
+  margin-top: 30px;
+}
+.hadis__explanation-box {
+  margin-top: 60px;
+}
+.hadis__explanation-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+.hadis__explanation-text {
+  margin-top: 30px;
+}
+.hadis__all-show {
+  font-weight: 700;
+  font-size: 18px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: rgba(0, 0, 0, 0.36);
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.hadis__muhadisis {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  text-align: right;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .logo__img {
+    width: 48px;
+    height: 42px;
+  }
+  .logo__txt {
+    font-size: 14px;
+  }
+  .contact__telegram,
+  .contact__whatsapp {
+    width: 30px;
+    height: 30px;
+  }
+  .main__title {
+    font-size: 24px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .search {
+      margin-top: 30px;
+  }
+  .search__hadis {
+    height: 44px;
+  }
+  .search__hadis::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .search__hadis:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .search__hadis::placeholder,
+  .hadis__all-show {
+    font-size: 14px;
+  }
+  .hadis__box {
+    margin-top: 50px;
+    padding: 10px 20px 15px;
+  }
+  .hadis__reliable,
+  .hadis__explanation-title,
+  .hadis__explanation-text,
+  .hadis__translate-text {
+    font-size: 16px;
+  }
+  .hadis__arabic-text {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .hadis__translate-text {
+    margin-top: 20px;
+  }
+  .hadis__explanation-box {
+    margin-top: 30px;
+  }
+  .hadis__explanation-text {
+    margin-top: 20px;
+  }
+  .hadis__muhadisis {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
